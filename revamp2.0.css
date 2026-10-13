@@ -1,0 +1,98 @@
+/* ==========================================================================
+   LIODEN CUSTOM THEME: HAZBIN HOTEL (DARK RED, GOLD, & VALENTINO)
+   ========================================================================== */
+
+/* 1. MAIN BACKGROUND & BASE FONTS */
+body {
+    background-image: url('https://gstatic.com') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    color: #f3c66f !important;
+    font-family: 'Georgia', serif !important;
+}
+
+/* 2. LOGO REPLACEMENT (VALENTINO) */
+/* Hides the default Lioden text/logo image */
+.navbar-brand img {
+    visibility: hidden !important;
+}
+/* Injects and blends the new image into the navbar */
+.navbar-brand {
+    background-image: url('https://gstatic.com') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+    width: 120px !important;
+    height: 50px !important;
+    display: inline-block !important;
+    mix-blend-mode: multiply !important; /* Removes the white background */
+}
+
+/* 3. NAVIGATION BAR */
+.navbar-default {
+    background-color: rgba(26, 2, 2, 0.9) !important; /* Near-black red */
+    border-bottom: 3px solid #d4af37 !important; /* Gold divider line */
+}
+.navbar-default .navbar-nav > li > a {
+    color: #d4af37 !important;
+    font-weight: bold !important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fff0be !important;
+    background-color: #3a0505 !important;
+}
+
+/* 4. MAIN PANELS & CONTAINERS */
+/* Translucent styling lets your background image peak through slightly */
+.container.main, .panel, .well, .box {
+    background: rgba(66, 6, 6, 0.85) !important;
+    border: 2px solid #d4af37 !important;
+    border-radius: 8px !important;
+    color: #fcd98c !important;
+}
+
+/* 5. TABLES & DEN COLUMNS */
+table.table, .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(51, 5, 5, 0.7) !important;
+}
+th {
+    background: #5c0a0a !important;
+    color: #d4af37 !important;
+    border-bottom: 2px solid #d4af37 !important;
+}
+td {
+    color: #fcd98c !important;
+    border-top: 1px solid #5c0a0a !important;
+}
+
+/* 6. HYPERLINKS ACCROSS THE SITE */
+a:link, a:visited {
+    color: #daa520 !important;
+    text-decoration: none !important;
+}
+a:hover, a:active {
+    color: #ffe89e !important;
+    text-shadow: 0 0 5px #d4af37 !important;
+}
+
+/* 7. BUTTONS & INPUTS */
+.btn-primary, .btn-success, input[type="submit"] {
+    background: #5c0a0a !important;
+    color: #d4af37 !important;
+    border: 1px solid #d4af37 !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover, .btn-success:hover, input[type="submit"]:hover {
+    background: #d4af37 !important;
+    color: #2a0404 !important;
+    box-shadow: 0 0 10px #d4af37 !important;
+}
+
+/* 8. CHAT BOX & SIDEBAR PANELS */
+.chat-container, .sidebar {
+    background: rgba(26, 2, 2, 0.85) !important;
+    border-left: 2px solid #d4af37 !important;
+}
